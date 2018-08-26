@@ -21,7 +21,6 @@ if __name__ == "__main__":
     # 예외사항1 h2 태그에 속하는 문자열
     # 예외사항2 'Twas ~ ight
     regex_notbr = re.compile("('Twas.*ight.*$)")
-    regex_enter = re.compile("(\s$)")
 
     isP2 = 0 # 두번째 P 태그 내부의 문자열인지 확인
     isP2First = 0 # 두번재 P 태그의 시작이 한번 나오면 그 다음부터 정규식 체크를 안하도록 하기 위함
@@ -75,7 +74,7 @@ if __name__ == "__main__":
                 else: # 두번째 p 태그 내의 개행문자
                     f2.write("<br/>\n")
                     continue
-        # 위의 어떤 경우에도 속하지 않는 빈줄인(개행문자) 경우 있는 그대로 write
+        # 위의 어떤 경우에도 속하지 않는 경우 있는 그대로 write
         f2.write(line)
 
     f.close()

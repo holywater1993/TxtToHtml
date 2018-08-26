@@ -1,7 +1,8 @@
+import sys
 import re
 
 if __name__ == "__main__":
-    f = open("rime.txt",'r')
+    f = open(sys.argv[1],'r')
     f2 = open("rime.html",'w')
     f2.write("<!DOCTYPE html>"+"\n"
              +"<html xmlns=\"http://www.w3.org/1999/xhtml\">"+"\n"

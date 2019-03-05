@@ -6,5 +6,5 @@ URL : https://github.com/michaeljamesfitzgerald/Introducing-Regular-Expressions<
 # Environment
 OS : windows 7 ultimate<br>
 interpreter : python 3.7<br>
-# How to execute
+# Usage
 python convert.py rime.txt
